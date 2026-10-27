@@ -13,16 +13,11 @@ namespace TDDFunciones_ayfo2627
                 return -1;
             }
 
-            if (n == 0)
-            {
-                return 1;
-            }
-
             long resultado = 1;
 
             for (int i = 1; i <= n; i++)
             {
-                resultado = resultado * i;
+                resultado *= i;
             }
 
             return resultado;

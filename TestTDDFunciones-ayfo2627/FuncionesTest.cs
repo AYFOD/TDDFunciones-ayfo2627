@@ -5,8 +5,14 @@ namespace TestTDDFunciones_ayfo2627
     public sealed class FuncionesTest
     {
         [TestMethod]
-        public void TestMethod1()
+        [DataRow(-2, -1L)]  
+        [DataRow(0, 1L)]   
+        [DataRow(6, 720L)]   
+        [DataRow(8,  40320L)]   
+        public void CalcularFactorial_VariosCasos(int n, long esperado)
         {
+            long resultado = Funciones.CalcularFactorial(n);
+            Assert.AreEqual(esperado, resultado);
         }
     }
 }

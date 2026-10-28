@@ -22,5 +22,10 @@ namespace TDDFunciones_ayfo2627
 
             return resultado;
         }
+
+        public static bool EsContrasenyaValida(string contrasenya)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
